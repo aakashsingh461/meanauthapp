@@ -1,0 +1,10 @@
+{
+  "name": "mean auth app aakash",
+  "description": "mean auth login and signup app  -aakash",
+  "repository": "https://github.com/aakashsingh461/akameanapp",
+  "logo": "",
+  "keywords": ["node", "express", "heroku", "angular", "mongodb" ,"passport" ,"jwt"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"}
+}
