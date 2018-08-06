@@ -1,10 +1,15 @@
 {
   "name": "mean auth app aakash",
   "description": "mean auth login and signup app  -aakash",
-  "repository": "https://github.com/aakashsingh461/akameanapp",
-  "logo": "",
+  "repository": "https://github.com/aakashsingh461/meanauthapp",
+  "main": "app.js",  
   "keywords": ["node", "express", "heroku", "angular", "mongodb" ,"passport" ,"jwt"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"}
+    "start": "node app.js"},
+    "buildpacks": [
+      {
+        "url": "https://github.com/mars/create-react-app-buildpack"
+      }
+    ]
 }

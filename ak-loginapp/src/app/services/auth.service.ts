@@ -17,7 +17,7 @@ export class AuthService {
     //console.log(newUser);
     let headers = new HttpHeaders({'Content-Type':'application/json'});
     //return this.http.post('http://localhost:3000/users/register',newUser,{headers});
-    return this.http.post('/users/register',newUser,{headers}); // use this for app deployment to heroku
+    return this.http.post('users/register',newUser,{headers}); // use this for app deployment to heroku
   }
 
   // authenticate User
@@ -25,7 +25,7 @@ export class AuthService {
     //console.log(cred);
     let headers = new HttpHeaders({'Content-Type':'application/json'});
     //return this.http.post('http://localhost:3000/users/authenticate',cred,{headers});     
-    return this.http.post('/users/authenticate',cred,{headers});   // use this for app deployment to heroku 
+    return this.http.post('users/authenticate',cred,{headers});   // use this for app deployment to heroku 
   }
 
   // get Profile
@@ -35,7 +35,7 @@ export class AuthService {
     {'Content-Type':'application/json',
     'Authorization':this.authToken});
     //return this.http.get('http://localhost:3000/users/profile',{headers});
-    return this.http.get('/users/profile',{headers});  // use this for app deployment to heroku 
+    return this.http.get('users/profile',{headers});  // use this for app deployment to heroku 
   }
 
   // load Token
@@ -65,7 +65,6 @@ export class AuthService {
     this.user = null;
     localStorage.clear();
   }
-
 }
 
 // error of map function is not resolved but we can use these libraries
